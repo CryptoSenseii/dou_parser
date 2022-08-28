@@ -4,7 +4,6 @@ import { JSDOM } from 'jsdom';
 import FormData from 'form-data';
 
 (async() => {
-    let startTime = performance.now();
     const companies = [];
     const x = 10000; // Number of companies to parse
     const [cookies, token] = await axios.get('https://jobs.dou.ua/companies/')
